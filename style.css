@@ -1,0 +1,47 @@
+* {
+   margin: ;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   border: solid black 20px;
+   border-top-style: double;
+   border-start-end-radius:400px;
+   border-end-end-radius:400px;
+   margin-left: 100px;
+   margin-right:100px;
+   margin-top:200px; 
+   justify-content: center;
+   align-items: center;
+   display:flex;   
+   text-align:center;
+   background-color: rgb(99, 10, 28);
+   position: absolute; 
+   border-bottom-style:double ;
+}
+input {
+   min-height: fit-content;
+    
+}
+#ADD {
+   margin-top: 300px;
+   margin-right: 500px; 
+   
+}
+h1 {
+   border:solid black;
+   border-top-width:5px ;
+   margin-bottom:;  
+   margin-trim:500px; 
+ 
+}  
+#listadetarefas {
+   border: solid black; 
+   width: 100px;
+   
+}
+input {
+   border: solid black;
+   
+}

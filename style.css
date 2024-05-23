@@ -1,47 +1,115 @@
-* {
-   margin: ;
+ * {
+   margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-
-body {
-   border: solid black 20px;
-   border-top-style: double;
-   border-start-end-radius:400px;
-   border-end-end-radius:400px;
-   margin-left: 100px;
-   margin-right:100px;
-   margin-top:200px; 
+ body {
+   border: 20px solid black;
+   border-right: 50px;
+   border-style: groove;
+   box-shadow:inset;
+   display: flex;
    justify-content: center;
    align-items: center;
-   display:flex;   
-   text-align:center;
+   text-align: center;
    background-color: rgb(99, 10, 28);
-   position: absolute; 
-   border-bottom-style:double ;
+   position: absolute;
+   width: calc(100%);
+   height: calc(100%);
 }
-input {
+
+ input {
    min-height: fit-content;
-    
+   border: 2px solid black;
+   padding: 10px;
+   font-size: 16px;
+   border-radius: 5px;
+   background-color: white;
+   color: rgb(99, 10, 28);
+   margin: 10px;
+   transition: all 0.3s ease;
 }
-#ADD {
+
+ input:focus {
+   border-color: rgb(99, 10, 28);
+   border-style: groove;
+   outline: none;
+}
+
+ button {
+   border: 2px solid black;
+   padding: 10px 20px;
+   font-size: 16px;
+   border-radius: 5px;
+   background-color: rgb(255, 255, 255);
+   color: rgb(99, 10, 28);
+   cursor: pointer;
+   margin: 10px;
+   transition: all 0.3s ease;
+}
+
+ #ADD:hover {
+   background-color: rgb(99, 10, 28);
+   color: white;
+   border-color: white;
+   cursor:cell;
+   
+}
+
+ #ADD {
    margin-top: 300px;
-   margin-right: 500px; 
+   margin-right: 500px;
+   position: absolute;
    
+                                                                                                                                            
 }
-h1 {
+
+ h1 {
+   border: 5px ridge black;
+   padding: 20px;
+   margin-bottom: 100px;
+   background-color: white;
+   color: rgb(99, 10, 28);
+   border-radius: 10px;
+   font-family: 'Arial', sans-serif;
+   font-size:2em;
+}
+ #border {
    border:solid black;
-   border-top-width:5px ;
-   margin-bottom:;  
-   margin-trim:500px; 
- 
-}  
-#listadetarefas {
-   border: solid black; 
-   width: 100px;
+   border-width:100px;
+   border-style: groove;
+   font-size:0;
+   border-bottom-width: 300px;
+   width:calc(100% -500px) ;
+   min-height:calc(100%);
+   border-bottom:0;
    
 }
-input {
-   border: solid black;
+ #border2 {
+   
+   margin: 30px;
+   border:solid black;
+   border-width:100px;
+   border-right-style: groove;
+   border-top-style: double;
+   border-top-color: rgb(75, 75, 75);
+   border-left-width: 400px;
+   border-bottom-style:double;
+   border-bottom-color:rgb(75, 75, 75);
+   font-size:0;
+   width:calc(100% -400px) ;
+   min-height:calc(100%);
+   position: absolute;
+   right:0;
    
 }
+ #listadetarefas {
+   border: 2px solid black;
+   width: 300px;
+   padding: 10px;
+   margin: 20px auto;
+   background-color: white;
+   border-radius: 10px;
+
+}
+

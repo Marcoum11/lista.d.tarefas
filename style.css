@@ -1,115 +1,129 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
- body {
-   border: 20px solid black;
-   border-right: 50px;
-   border-style: groove;
-   box-shadow:inset;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-color: rgb(99, 10, 28);
-   position: absolute;
-   width: calc(100%);
-   height: calc(100%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
- input {
-   min-height: fit-content;
-   border: 2px solid black;
-   padding: 10px;
-   font-size: 16px;
-   border-radius: 5px;
-   background-color: white;
-   color: rgb(99, 10, 28);
-   margin: 10px;
-   transition: all 0.3s ease;
+body {
+  border: 20px solid black;
+  border-right: 30px;
+  border-right-style: 30px;
+  border-style: groove;
+  border-top-style: ridge;
+  border-left-style: ridge;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: calc(100%);
+  height: calc(100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
- input:focus {
-   border-color: rgb(99, 10, 28);
-   border-style: groove;
-   outline: none;
+input {
+  min-height: fit-content;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(99, 10, 28);
+  margin: px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
- button {
-   border: 2px solid black;
-   padding: 10px 20px;
-   font-size: 16px;
-   border-radius: 5px;
-   background-color: rgb(255, 255, 255);
-   color: rgb(99, 10, 28);
-   cursor: pointer;
-   margin: 10px;
-   transition: all 0.3s ease;
+input:focus {
+  border-color: rgb(99, 10, 28);
+  border-style: groove;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
- #ADD:hover {
-   background-color: rgb(99, 10, 28);
-   color: white;
-   border-color: white;
-   cursor:cell;
-   
+button {
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(99, 10, 28);
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
- #ADD {
-   margin-top: 300px;
-   margin-right: 500px;
-   position: absolute;
-   
-                                                                                                                                            
+#ADD:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-color: white;
+  cursor: cell;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
- h1 {
-   border: 5px ridge black;
-   padding: 20px;
-   margin-bottom: 100px;
-   background-color: white;
-   color: rgb(99, 10, 28);
-   border-radius: 10px;
-   font-family: 'Arial', sans-serif;
-   font-size:2em;
-}
- #border {
-   border:solid black;
-   border-width:100px;
-   border-style: groove;
-   font-size:0;
-   border-bottom-width: 300px;
-   width:calc(100% -500px) ;
-   min-height:calc(100%);
-   border-bottom:0;
-   
-}
- #border2 {
-   
-   margin: 30px;
-   border:solid black;
-   border-width:100px;
-   border-right-style: groove;
-   border-top-style: double;
-   border-top-color: rgb(75, 75, 75);
-   border-left-width: 400px;
-   border-bottom-style:double;
-   border-bottom-color:rgb(75, 75, 75);
-   font-size:0;
-   width:calc(100% -400px) ;
-   min-height:calc(100%);
-   position: absolute;
-   right:0;
-   
-}
- #listadetarefas {
-   border: 2px solid black;
-   width: 300px;
-   padding: 10px;
-   margin: 20px auto;
-   background-color: white;
-   border-radius: 10px;
-
+#ADD {
+  margin-top: 300px;
+  margin-right: 500px;
+  position: absolute;
 }
 
+#title {
+  border: 5px ridge black;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: white;
+  color: rgb(99, 10, 28);
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#border {
+  border-right: solid rgba(99, 10, 28, 0);
+  border-width: 100px;
+  border-left-style: groove;
+  border-top-style: double;
+  border-top-color: rgb(75, 75, 75);
+  border-right-width: 400px;
+  border-bottom-style: double;
+  border-bottom-color: rgb(75, 75, 75);
+  font-size: 0;
+  width: calc(100% px);
+  min-height: calc(100%);
+  position: absolute;
+  left: 0;
+  box-shadow: 300px 0 6vh  rgba(0, 0, 0, 0.5);
+  box-shadow:calc(100%)
+}
+
+#border2 {
+  border-left: solid rgba(99, 10, 28, 0);
+  border-width: 100px;
+  border-right-style: groove;
+  border-top-style: double;
+  border-top-color: rgb(75, 75, 75);
+  border-left-width: 400px;
+  border-bottom-style: double;
+  border-bottom-color: rgb(75, 75, 75);
+  font-size: 0;
+  width: calc(100% px);
+  min-height: calc(100%);
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#listadetarefas {
+  border: 2px solid black;
+  width: 300px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-height: fit-content;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

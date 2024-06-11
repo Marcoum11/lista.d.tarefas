@@ -1,49 +1,63 @@
 <!DOCTYPE html> 
 <html>
 
- <head>
-   <title>Tarefas</title>
+<head>
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-   <link rel="stylesheet" href="style.css">
-  
- </head>
- <body>
-    <h2 id="border">Borda</h2>
-    <h2 id="border2">Borda2</h2>
-    <h1 id="title">𝕃𝕚𝕤𝕥𝕒 𝕕𝕖 𝕋𝕒𝕣𝕖𝕗𝕒𝕤</h1>
-    <ul id="listadetarefas"></ul>
+<body>
+  <h1 id="title">𝕃𝕚𝕤𝕥𝕒 𝕕𝕖 𝕋𝕒𝕣𝕖𝕗𝕒𝕤</h1>
+  <ul id="listadetarefas"></ul>
 
- 
-    <input>
-    <button id="ADD" onclick="add()">adicionar</button>
-    <script>rgba(0, 0, 0, 0.3);
-      //estado da aplicação
+  <input id="input">
+  <button id="ADD" onclick="add()">adicionar</button>
 
-      const tarefas = ["Estudar HTML", "Estudar CSS", "Estudar JS"]
+  <script>
+    
+    const tarefas = ["Estudar HTML", "Estudar CSS", "Estudar JS"];
 
-      //alterador do estado
+    
+    function add() {
+      const input = document.getElementById("input");
+      const tarefa = input.value;
+      tarefas.push(tarefa);
+      input.value = "";
+      render();
+    }
 
-      function add() {
-          const input = document.querySelector("input")
-          const tarefa = input.value
-          tarefas.push(tarefa)
-          input.value = ""
-          render()
-        }
-       //aparecer na tela
-        function render() {
-          const ul = document.querySelector("ul")
-          ul.innerHTML = null   
+    function remover(indice) {
+      tarefas.splice(indice, 1);
+      render();
+    }
 
-          tarefas.forEach(function(tarefa){
-            const li = document.createElement("li")
-            li.innerText = tarefa
-            ul.appendChild(li)
-          })
-            
-      }
+    function render() {
+      const ul = document.getElementById("listadetarefas");
+      ul.innerHTML = "";
+      tarefas.forEach((tarefa, indice) => {
+        const li = document.createElement("li");
+        li.textContent = tarefa;
 
-      render()
-    </script>
- </body>
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Apagar";
+        deleteButton.className = "delete-button";
+        deleteButton.onclick = () => remover(indice);
+
+        li.appendChild(deleteButton);
+        ul.appendChild(li);
+      });
+    }
+    const input = document.getElementById('input');
+
+      input.addEventListener('input', () => {
+      input.classList.add('input-animation');
+      });
+
+      input.addEventListener('animationend', () => {
+      input.classList.remove('input-animation');
+      });
+    document.addEventListener("DOMContentLoaded", render);
+  </script>
+</body>
+
 </html>
